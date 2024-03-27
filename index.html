@@ -466,30 +466,42 @@
             </div>
             <div class="row m-0">
                 <div class="col-md-12 p-0 pt-4 pb-4">
-                    <form action="#" class="bg-dark p-4 m-auto">
+                    <form action="https://formsubmit.co/cvivasg@unicauca.edu.co" method="POST"
+                        class="bg-dark p-4 m-auto">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="Nombre">
+                                    <input type="text" name="name" class="form-control" placeholder="Nombre" required>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="mb-3">
-                                    <input type="email" class="form-control" placeholder="Correo">
+                                    <input type="email" name="email" class="form-control" placeholder="Correo" required>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="mb-3">
-                                    <textarea class="form-control" placeholder="Mensaje" rows="3"></textarea>
+                                    <input type="text" name="subject" class="form-control" placeholder="Asunto"
+                                        required>
                                 </div>
                             </div>
-                            <button class="btn btn-primary btn-lg btn-block mt-3">Enviar</button>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <textarea name="coments" class="form-control" placeholder="Mensaje" rows="3"
+                                        required></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block mt-3">Enviar</button>
                         </div>
+
+                        <input type="hidden" name="_next" value="https://carlos-vg.github.io/Laboratorio4_Bootstrap/">
+                        <input type="hidden" name="_captcha" value="false">
                     </form>
                 </div>
             </div>
         </div>
     </section>
+
 
     <footer class="bg-dark p-2 text-center">
         <div class="container">
@@ -497,6 +509,7 @@
         </div>
     </footer>
 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
