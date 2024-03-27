@@ -8,6 +8,12 @@ body {
     background: black;
 }
 
+.logo {
+    font-size: 20px;
+    color: #FFF9ED;
+    margin-bottom: 0;
+}
+
 .section-padding {
     padding: 70px 0;
 }
