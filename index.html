@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <span class="text-primary">Playa</span>Code
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarS"
+                aria-controls="navbarS" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarS">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Porfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contactos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="youtube-video-background">
+        <div id="youtube-video"></div>
+        <div class="video-overlay"></div>
+        <div class="video-title">
+            <span>GEOGRAFÍA VIVA</span>
+            <h1>COLOMBIA EN CADA RINCÓN</h1>
+        </div>
+    </div>
+
+    <section class="team section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center bg-dark text-white">
+                        <div class="card-body text-white">
+                            <img src="images/ubicacionLoguito.jpg" class="img-fluid rounded-circle" alt="">
+                        </div>
+                        <h3 class="card-title py-2">Ubicación Geográfica</h3>
+                        <p class="card-text">
+                            Colombia se encuentra al noroeste de Sudamérica.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center bg-dark text-white">
+                        <div class="card-body text-white">
+                            <img src="images/extensionTerritorial.jpg" class="img-fluid rounded-circle" alt="">
+                        </div>
+                        <h3 class="card-title py-2">Extensión Territorial</h3>
+                        <p class="card-text">
+                            Tiene un área de 1.141.748 km².
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center bg-dark text-white">
+                        <div class="card-body text-white">
+                            <img src="images/extensionMaritima.jpg" class="img-fluid rounded-circle" alt="">
+                        </div>
+                        <h3 class="card-title py-2">Extensión Marítima</h3>
+                        <p class="card-text">
+                            Su zona marítima abarca 928.660 km².
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center bg-dark text-white">
+                        <div class="card-body text-white">
+                            <img src="images/colombiaMundo.jpg" class="img-fluid rounded-circle" alt="">
+                        </div>
+                        <h3 class="card-title py-2">Posición Global y Regional</h3>
+                        <p class="card-text">
+                            Es el 26º país más grande del mundo y el 4º en Sudamérica.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center text-white pb-5">
+                        <span>Geografía y Clima de Colombia</span>
+                        <h2>Ubicación, Fronteras y Diversidad Climática</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-dark pb-2">
+                        <div class="card-body text-white">
+                            <div class="img-area mb-4">
+                                <img src="images/ubicacionGeografica.jpg" class="img-fluid-port" alt="">
+                            </div>
+                            <h3>Ubicación Geográfica</h3>
+                            <button class="btn-1 bg-primary text-white" data-info="info-ubicacion1">Información</button>
+                            <div class="info-box-dinamico" id="info-ubicacion1" style="display: none;">
+                                <p class="notion">Colombia se ubica en el noroeste de América del Sur, con territorio en
+                                    ambos
+                                    hemisferios y costas en el océano Pacífico y el Atlántico. Su extensión territorial
+                                    es de 1.141.748 km², siendo el cuarto país más grande de Suramérica. Limita al norte
+                                    con el mar Caribe, al sur con Perú y Ecuador, al este con Venezuela y Brasil, y al
+                                    oeste con Panamá y el océano Pacífico.
+                                    <br><br>
+                                    Destaca por su diversidad
+                                    climática y ecológica, gracias a su ubicación ecuatorial, lo que le permite tener
+                                    una gran variedad de ecosistemas y dos cosechas anuales. La posición geográfica del
+                                    país ofrece ventajas estratégicas para el comercio y la comunicación, con
+                                    importantes puertos en ambos océanos y proximidad al canal de Panamá
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-dark pb-2">
+                        <div class="card-body text-white">
+                            <div class="img-area mb-4">
+                                <img src="images/fronteras_limites.jpg" class="img-fluid-port" alt="">
+                            </div>
+                            <h3>Fronteras y Limites</h3>
+                            <button class="btn-1 bg-primary text-white" data-info="info-ubicacion2">Información</button>
+                            <div class="info-box-dinamico" id="info-ubicacion2" style="display: none;">
+                                <p class="notion">
+                                    Colombia definió sus fronteras terrestres a lo largo de más de un siglo,
+                                    estableciendo límites con Brasil, Ecuador, Panamá, Perú y Venezuela, gracias a la
+                                    labor iniciada por la antigua Oficina de Longitudes, que más tarde se convirtió en
+                                    el Instituto Geográfico Agustín Codazzi.
+                                    <br><br>
+                                    Los límites terrestres de Colombia se
+                                    extienden por 6.342 kilómetros, distribuidos entre sus vecinos de la siguiente
+                                    manera: Venezuela (2.219 km), Brasil (1.645 km), Perú (1.626 km), Ecuador (586 km) y
+                                    Panamá (266 km). Doce departamentos colombianos que hacen frontera con estos países
+                                    tienen 54 municipios en la Zona de Frontera, con una población estimada en 2001 de
+                                    1.598.474 habitantes por el DANE.
+                                    <br><br>
+                                    En cuanto a sus fronteras marítimas, Colombia ejerce soberanía sobre el mar
+                                    territorial y la plataforma continental, adoptando una extensión de 188 millas
+                                    náuticas más las 12 millas de mar territorial, totalizando 370 kilómetros. Esta
+                                    soberanía se ha formalizado en tratados con varios países y abarca tanto las aguas
+                                    superficiales como el aire y el subsuelo hasta los 200 metros de profundidad. Sin
+                                    embargo, actualmente hay un diferendo con Venezuela respecto a la plataforma
+                                    continental en el Golfo de Venezuela.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-dark pb-2">
+                        <div class="card-body text-white">
+                            <div class="img-area mb-4">
+                                <img src="images/clima.jpg" class="img-fluid-port" alt="">
+                            </div>
+                            <h3>Clima de Colombia</h3>
+                            <button class="btn-1 bg-primary text-white" data-info="info-ubicacion3">Información</button>
+                            <div class="info-box-dinamico" id="info-ubicacion3" style="display: none;">
+                                <p class="notion">
+                                    El clima de Colombia se determina por factores geográficos y atmosféricos, que
+                                    incluyen la
+                                    radiación solar, la temperatura, los sistemas de vientos, la humedad atmosférica,
+                                    los pisos
+                                    térmicos y las precipitaciones. Esta interacción crea un diverso mosaico climático,
+                                    variando
+                                    desde temperaturas frías de 0 °C en montañas hasta calurosas de 30 °C en las costas.
+                                    <br><br>
+                                    Factores Geográficos:
+                                    <br><br>
+                                    Latitud: Situada en la línea ecuatorial, Colombia recibe radiación solar
+                                    verticalmente durante
+                                    todo el año, lo que teóricamente sugeriría un clima extremadamente caluroso. Sin
+                                    embargo, la
+                                    humedad y el relieve moderan este efecto, resultando en una amplia variedad de
+                                    climas. La
+                                    posición geográfica de Colombia está también influenciada por la radiación solar y
+                                    la zona de
+                                    convergencia intertropical.
+                                    <br><br>
+                                    Altitud: Es el factor más determinante del clima en Colombia, con la temperatura
+                                    disminuyendo
+                                    aproximadamente un grado centígrado por cada 187 metros de ascenso. Esto permite la
+                                    existencia
+                                    de múltiples zonas climáticas, desde las más calientes hasta las frías y glaciales,
+                                    incluyendo
+                                    zonas templadas cuya temperatura varía según la altitud. Este gradiente térmico ha
+                                    inspirado la
+                                    creación de los pisos térmicos como sistema de medida para la variación de la
+                                    temperatura con la
+                                    altura.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="carouselE" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/regionesNaturales.png" class="d-block w-100 bg-dark" alt="">
+                <div class="carousel-caption">
+                    <span>Territorio Colombiano</span>
+                    <h2>Regiones Naturales</h2>
+                    <div class="corousel-dinamico">
+                        <p class="notion">
+                            Se designa Región Natural a cada zona geográfica de un país o continente que cuenta con las
+                            mismas
+                            características en cuanto a relieve, clima, vegetación, y clases de suelo.
+                            <br><br>
+                            En Colombia estas diferencias regionales se definen por una serie de factores muy claros
+                            tales como las
+                            características del relieve (ya sea montañoso o llano), la distancia al mar, el promedio de
+                            lluvias y
+                            las condiciones del suelo. De acuerdo a estas condiciones se pueden diferenciar en Colombia
+                            seis
+                            regiones naturales denominadas Amazonía, Andina, Caribe, Insular, Pacífica y Orinoquía.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/relieveColombiano.png" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <span>Relieve</span>
+                    <h2>Configuración Topográfica y Geomorfológica</h2>
+                    <div class="corousel-dinamico">
+                        <p class="notion">
+                            Cordillera Occidental: Comienza en el Nudo de los Pastos, extendiéndose a lo largo de la
+                            costa del
+                            Pacífico, con alturas promedio de 2.000 metros y destacando por volcanes como el Cumbal y
+                            Azufral.
+                            Separa la llanura del Pacífico del valle del río Cauca.
+                            <br><br>
+                            Cordillera Central: Arranca del Nudo de los Pastos, alcanzando alturas superiores a los
+                            5.000 metros,
+                            siendo la más alta y volcánica. Rodeada por los valles de los ríos Cauca y Magdalena,
+                            incluye el Macizo
+                            Antioqueño y importantes ciudades como Medellín y Cali.
+                            <br><br>
+                            Cordillera Oriental: La más extensa y joven geológicamente, inicia en el Macizo Colombiano y
+                            se divide
+                            en el norte, dando origen a otras formaciones. Destaca por el altiplano cundi-boyacense y la
+                            Sierra
+                            Nevada del Cocuy, siendo una región de gran fertilidad que alberga ciudades importantes como
+                            Bogotá.
+                            <br><br>
+                            Además, Colombia cuenta con valles interandinos como los del río Magdalena, Cauca, y Atrato,
+                            que son
+                            zonas de baja altitud entre las cordilleras, caracterizadas por su diversidad climática y
+                            suelos
+                            fértiles, contribuyendo a hacer de Colombia una de las tierras tropicales más productivas
+                            del mundo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/llanuras.png" class="d-block w-100" alt="">
+                <div class="carousel-caption">
+                    <span>Relieve Colombiano</span>
+                    <h2>Llanuras y Serranías</h2>
+                    <div class="corousel-dinamico">
+                        <p class="notion">
+                            Llanuras Bajas: Las regiones planas constituyen un 67% del territorio continental de
+                            Colombia. Sus
+                            extensas llanuras abarcan toda la zona oriental, así como también, gran parte de la zona
+                            norte y
+                            occidental del país.
+                            <br><br>
+                            Son los Llanos orientales, Amazonía, LLanura del Pacífico y la Llanura del Caribe.
+                            <br><br>
+                            Sistemas Periféricos: Fuera del gran sistema montañoso de los Andes, existen en Colombia
+                            otros núcleos
+                            montañosos independientes como la serranía de Baudó, el Darién, la sierra nevada de Santa
+                            Marta, las
+                            serranías de Jarara y Macuira y la sierra de la Macarena.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselE" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselE" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+    </div>
+
+    <section class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-img">
+                        <img src="images/pisosTermicos.png" class="img-fluid-1" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="about-text text-white">
+                        <span>Relieve Colombiano</span>
+                        <h2>Llanuras y Serranías</h2>
+                        <p class="notion">
+                            Piso Térmico Cálido: Situado entre 0 y 1.000 metros sobre el nivel del mar, con temperaturas
+                            promedio superiores a 24°C. Ocupa aproximadamente el 80% del territorio nacional (913.000
+                            Km²), incluyendo llanuras costeras, valles de ríos y llanuras del Orinoco y Amazonas.
+                            <br><br>
+                            Piso Térmico Templado o Medio: Ubicado entre 1.000 y 2.000 metros, con temperaturas entre 17
+                            y 24°C. Representa el 10% del territorio (114.000 Km²), en zonas bajas de montañas.
+                            <br><br>
+                            Piso Térmico Frío: Comprende altitudes entre 2.000 y 3.000 metros, con temperaturas de 12 a
+                            17°C, abarcando el 7.9% del país (93.000 Km²), en partes altas de montañas
+                            <br><br>
+                            Piso Térmico Páramo: Se encuentra entre 3.000 y 4.000 metros, con temperaturas de 6 a 12°C,
+                            cubriendo el 2% del territorio (23.000 Km²), en la cima de las montañas.
+                            <br><br>
+                            Piso Térmico Glacial: Abarca zonas por encima de los 4.000 metros, con temperaturas
+                            inferiores a 6°C, constituyendo menos del 0.1% del país. Caracterizado por bajas
+                            temperaturas, pocas lluvias, vientos helados y nevadas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-med-12">
+                    <div class="section-header text-center text-white pb-5">
+                        <span>Hidrografía y Radiación Solar en Colombia</span>
+                        <h2>Vertientes y Distribución Energética</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-umbrella-fill"></i>
+                            <h3 class="card-title">Hidrografía Colombiana</h3>
+                            <p class="lead">
+                                Colombia es uno de los países con mayor número de recursos hídricos en el mundo. En él
+                                se pueden
+                                encontrar seis tipos de aguas, incluyendo aguas lluvias, aguas superficiales, aguas
+                                subterráneas,
+                                aguas termominerales, aguas marinas y oceánicas y aguas de alimentación glacial.
+                                <br><br>
+                                Igualmente, Colombia por su ubicación geográfica y las condiciones del terreno, presenta
+                                una
+                                precipitación anual de más de 3000mm promedio al año, lo que representa una
+                                significativa abundancia
+                                hídrica comparada con el nivel promedio de lluvias mundial que es de 900mm al año y con
+                                el de Sur
+                                América que solo llega a los 1600mm al año.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-water"></i>
+                            <h3 class="card-title">Vertientes Hidrográficas</h3>
+                            <p class="lead">
+                                Las vertientes hidrográficas son grandes unidades que agrupan los sistemas de drenajes
+                                (ríos), que
+                                vierten sus aguas en un mismo destino, el cual puede ser un océano, el mar, un lago o un
+                                río. El
+                                relieve hace que los ríos de Colombia corran en distintas direcciones: unos hacia el
+                                Pacífico, otros
+                                hacia el Caribe y algunos pocos hacia el golfo de Maracaibo, en Venezuela. Los ríos más
+                                largos
+                                corren por las llanuras orientales hasta desaguar en el Orinoco y en el Amazonas.
+                                <br><br>
+                                Esta distribución permite distinguir en Colombia cinco grandes vertientes: el mar
+                                Caribe, el océano
+                                Pacífico, el río Amazonas, el río Orinoco y la vertiente del Catatumbo. Cada una de
+                                estas vertientes
+                                tiene características propias en cuanto a área, dirección en la cual drenan sus aguas,
+                                clima,
+                                vegetación, longitud y caudal de los ríos que la forman.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-sun"></i>
+                            <h3 class="card-title">Radiación Solar</h3>
+                            <p class="lead">
+                                La región de mayor radiación solar en el país es la península de La Guajira y sus
+                                valores máximos se
+                                presentan en el mes de julio, con promedios superiores a 650 cal/cm2/día. Este valor
+                                desciende
+                                gradualmente hasta diciembre, mes en que se presenta el valor mínimo de 530 cal/cm2/día.
+                                <br><br>
+                                En Colombia, la radiación solar varía regionalmente. Las zonas del valle del río Cauca,
+                                el valle del
+                                río Magdalena hasta la costa Atlántica, y Cúcuta mantienen valores estables anuales, con
+                                picos en
+                                julio (550 cal/cm²/día) y diciembre (450 cal/cm²/día). La Amazonía alcanza su máximo en
+                                octubre (330
+                                cal/cm²/día), mientras que en el altiplano Cundiboyacense los valores fluctúan entre 480
+                                cal/cm²/día
+                                en febrero y 420 cal/cm²/día en junio. Otras áreas andinas presentan menores niveles de
+                                radiación,
+                                con extremos de 400 cal/cm²/día en febrero y 320 cal/cm²/día en junio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact section-padding">
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center text-white pb-5">
+                        <span>Contacto</span>
+                        <h2>Estamos Aquí para Ayudarte</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-md-12 p-0 pt-4 pb-4">
+                    <form action="#" class="bg-dark p-4 m-auto">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Nombre">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Correo">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <textarea class="form-control" placeholder="Mensaje" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary btn-lg btn-block mt-3">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark p-2 text-center">
+        <div class="container">
+            <p class="text-white">Playas</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

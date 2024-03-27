@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: black;
+}
+
+.section-padding {
+    padding: 70px 0;
+}
+
+#youtube-video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#youtube-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110%;
+    height: 300%;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.video-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    text-align: center;
+    z-index: 2;
+}
+
+.video-title span {
+    font-size: 30px;
+    color: #FEDAB6;
+    font-weight: bold;
+}
+
+.video-title h1 {
+    font-size: 100px;
+    line-height: 100px;
+    color: #F1ECDC;
+    font-weight: bold;
+}
+
+.card {
+    height: 100%;
+}
+
+.card-body {
+    min-height: 150px;
+}
+
+.card-title {
+    min-height: 100px;
+    font-weight: bold;
+    color: #FEDAB6; 
+}
+
+.card-text {
+    font-size: 20px;
+    min-height: 80px; 
+}
+
+.img-fluid-port {
+    width: 100%;
+    height: 420px;
+}
+
+.btn-1 {
+    margin-top: 10px;
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #bf2929;
+    color: #FFF9ED;
+    font-size: 20px;
+    border: transparent;
+}
+
+.corousel-dinamico {
+    position: absolute;
+    max-height: 250px;
+    overflow-y: scroll;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.corousel-dinamico p {
+    margin-top: 0;
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.corousel-dinamico::-webkit-scrollbar {
+    display: none;
+}
+
+.notion {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.portfolio h3 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #FFF9ED;
+}
+
+span {
+    color: #FEDAB6;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+h2 {
+    color: #FFF9ED;
+    font-size: 70px;
+    line-height: 70px;
+    margin-bottom: 35px;
+    font-weight: bold;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption {
+    bottom: 350px;
+    z-index: 2;
+}
+
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); 
+    z-index: 1;
+}
+
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-brand {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus .navbar-light .navbar-brand:hover {
+    color: #000;
+}
+
+.w-100 {
+    height: 100vh;
+}
+
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+}
+
+.services .card-body {
+    font-size: 50px;
+}
+
+.team .card.body i {
+    font-size: 20px;
+}
+
+.img-fluid-1 {
+    width: 100%;
+    height: 660px;
+}
+
+.lead {
+    text-align: justify;
+}
+
+@media(max-width: 1000px) {
+
+    #youtube-video-background {
+        height: 370px;
+    }
+
+    .video-title span {
+        font-size: 15px;
+        line-height: 2px;
+    }
+    
+    .video-title h1 {
+        font-size: 40px;
+        line-height: 35px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .carousel-item {
+        height: 70vh;
+    }
+
+    .w-100 {
+        height: 70vh;
+    }
+
+    .carousel-caption {
+        bottom: 150px;
+    }
+
+    .corousel-dinamico{
+        margin-top: 0;
+        max-height: 150px;
+    }
+
+    .carousel-caption h2 {
+        font-size: 50px;
+        line-height: 45px;
+    }
+
+    .carousel-caption span {
+        font-size: 20px;
+        line-height: 2px;
+    }
+
+    .carousel-caption a {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.5;
+        font-size: 12px;
+    }
+
+    .about-text {
+        padding-top: 50px;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .section-padding {
+        padding: 10px 0;
+    }
+}
