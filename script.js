@@ -2,26 +2,26 @@ function onYouTubeIframeAPIReady() {
     new YT.Player('youtube-video', {
         height: '100%',
         width: '100%',
-        videoId: 'wOoy9raOyaw', // El ID de tu video.
+        videoId: 'UIjJ5B_H5Tg', // El ID de tu video.
         playerVars: {
             autoplay: 1,
             controls: 0,
             loop: 1,
-            playlist: 'wOoy9raOyaw', // Necesario para la funcionalidad de loop.
+            playlist: 'UIjJ5B_H5Tg', // Necesario para la funcionalidad de loop.
             mute: 1
             // No necesitas 'start' aquí porque lo manejaremos manualmente.
         },
         events: {
             'onReady': function (event) {
                 // Inicia el video en el tiempo de inicio deseado.
-                event.target.seekTo(60, true); // Empieza en 1:00.
-                event.target.setPlaybackRate(1);
+                event.target.seekTo(0, true); // Empieza en 0:00.
+                event.target.setPlaybackRate(1.5);
             },
             'onStateChange': function (event) {
                 if (event.data === YT.PlayerState.PLAYING) {
                     let checkTime = setInterval(function () {
-                        if (event.target.getCurrentTime() >= 120) { // Si el tiempo actual es >= 2:00.
-                            event.target.seekTo(60, true); // Vuelve a 1:00.
+                        if (event.target.getCurrentTime() >= 180) { // Si el tiempo actual es >= 3:00.
+                            event.target.seekTo(0, true); // Vuelve a 0:00.
                         }
                     }, 1000); // Revisa cada segundo.
 
